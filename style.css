@@ -14,10 +14,11 @@ html,body{
 
 .container {
     background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 1px,1px,2px,2px black;
     display: flex;
     height: 500px;
     width: 600px;
-    /* border: 1px solid; */ 
     margin: auto;
     margin-top: 50px;
     justify-content: center;
@@ -26,21 +27,22 @@ html,body{
 
 /* login */
 .form{
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     width: 900%;
     align-items: center;
-    background-color: white;
+    background-color: #ffffff
 }
 
 .form h2{
-    font-size: 5em;
+    font-size: 4em;
     margin: 40px;
     color: #291f1f;
 }
 
-.box{
 
+.box{
     border: none;
     border-bottom: 1px solid #d1d1d4;
     background: none;
@@ -50,16 +52,15 @@ html,body{
     padding-left: 20px;
     font-weight: 300;
     width: 50%;
-    box-shadow: 1px,1px,2px,2px black
-
-
+    box-shadow: 1px,1px,2px,2px black;
+    outline: none;
 }
 
 #submit{
     padding: 12px 30px;
-    font-size: 3em;
+    font-size: 1em;
     margin-top: 30px;
-    width: 60%;
+    width: 50%;
     height: auto;
     border: none;
     outline: none;
@@ -70,11 +71,12 @@ html,body{
 }
 @media (max-width: 700px) {
     .container {
-        align-content:flex-start;
+        align-content:center;
         flex-shrink: 1;
         margin-right: 5px;
         margin-left: 5px;
         padding-top: 20px;
         text-align: center;
+        width: auto;
     }
 }
